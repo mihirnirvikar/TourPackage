@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/hot-air-balloon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <title>The Road</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="open-navbar-icon navbar-icon center">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="navbar-wrapper">
+        <nav class="navbar">
+          <div class="close-navbar-icon navbar-icon center">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+          </div>
+          <div class="nav-list">
+            <a href="#home" class="nav-link center">Home</a>
+            <a href="#tour" class="nav-link center">Tours</a>
+            <a href="#story" class="nav-link center">About Us</a>
+            <a href="#tour" class="nav-link center">Offer</a>
+            <!-- <a href="./login.html" class="nav-link center">>Login</a> -->
+            <a href="#contact" class="nav-link center">Contact</a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Header -->
+      <header class="header center" id="home">
+        <video class="bg-video" style="position: absolute; z-index: -1; object-fit: inherit;" autoplay muted loop>
+          <source src="./images/header-bg1234.mp4" type="video/mp4" />
+        </video>
+        <div class="header-text">
+          <h1 class="heading">Around <div class="animated-word">
+            <span>W</span>
+            <span>O</span>
+            <span>R</span>
+            <span>L</span>
+            <span>D</span>
+          </div></h1>
+          <p class="header-paragraph">
+            "Traveling - it leaves you speechless, then turns you into a
+            storyteller"
+          </p>
+        </div>
+        <img
+          src="./images/air-balloon.png"
+          alt="Header Image"
+          class="header-image"
+        />
+        <div class="logo">
+          <h1>
+            <!-- <span class="center">t</span>
+            <span class="center">h</span>
+            <span class="center">e</span> -->
+            <span class="center">t</span>
+            <span class="center">o</span>
+            <span class="center">u</span>
+            <span class="center">r</span>
+          </h1>
+        </div>
+      </header>
+
+      <!-- Popular tours -->
+      <section class="popular-tours" id="tour">
+        <h1 class="popular-tours-heading">The Most Popular Tours</h1>
+        <div class="cards-wrapper">
+          <div class="card">
+            <div class="front-side">
+              <img src="./images/forest.jpg" alt="Forest" class="card-image" />
+              <h1 class="tour-name">Munnar Tea garden</h1>
+              <ul class="card-list">
+                <li class="card-list-item">7 days tour</li>
+                <li class="card-list-item">Up to 20 people</li>
+                <li class="card-list-item">4 tour guides</li>
+                <li class="card-list-item">Sleep in private tents</li>
+                <li class="card-list-item">Difficulty: medium</li>
+              </ul>
+              <button class="navigation-button">
+                price &gt;&gt;
+              </button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">
+                &lt;&lt; back
+              </button>
+              <h3 class="tour-price">₹14999</h3>
+              <form action="/booking" method="get">
+              <button class="card-button"><a href="/booking">Booking</a></button>
+            </form>
+            </div>
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img src="./images/river.jpg" alt="River" class="card-image" />
+              <h1 class="tour-name">Alleppey Back Water</h1>
+              <ul class="card-list">
+                <li class="card-list-item">9 days tour</li>
+                <li class="card-list-item">Up to 30 people</li>
+                <li class="card-list-item">7 tour guides</li>
+                <li class="card-list-item">Sleep in Boat House</li>
+                <li class="card-list-item">Difficulty: hard</li>
+              </ul>
+              <button class="navigation-button">
+                price &gt;&gt;
+              </button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">
+                &lt;&lt; back
+              </button>
+              <h3 class="tour-price">₹19999</h3>
+              <form action="/booking" method="get">
+              <button class="card-button"><a href="/booking">Booking</a></button>
+            </form>
+            </div>
+          </div>
+          <div class="card">
+            <div class="front-side">
+              <img src="./images/sea.jpg" alt="Sea" class="card-image" />
+              <h1 class="tour-name">Lakshadweep</h1>
+              <ul class="card-list">
+                <li class="card-list-item">15 days tour</li>
+                <li class="card-list-item">Up to 40 people</li>
+                <li class="card-list-item">8 tour guides</li>
+                <li class="card-list-item">Sleep in hotel</li>
+                <li class="card-list-item">Difficulty: easy</li>
+              </ul>
+              <button class="navigation-button">
+                price &gt;&gt;
+              </button>
+            </div>
+            <div class="back-side center">
+              <button class="navigation-button">
+                &lt;&lt; back
+              </button>
+              <h3 class="tour-price">₹49999</h3>
+              <form action="/booking" method="get">
+              <button class="card-button"><a href="/booking">Booking</a></button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stories -->
+      <section class="stories" id="story">
+        <div class="video-container">
+          <video class="bg-video" autoplay muted loop>
+            <source src="./images/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="stories-wrapper">
+          <div class="story-bg">
+            <div class="story">
+              <img
+                src="./images/story-img-1.jpg"
+                alt="Customer image"
+                class="story-image"
+              />
+              <div class="story-text">
+                <h1 class="story-heading">
+                  These were the best days of this year
+                </h1>
+                <p class="story-paragraph">
+                  Best trip I am very contended and happy with the trip that was planned for us. 
+                  It was a personalised Munnar India trip and everything was spot on, starting from the hotels to the tours.
+                   We received proper guidance and all our queries and issues were duly addressed before and during the trip. 
+                   I would definitely recommend them for a hassle free travel experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="story-bg">
+            <div class="story">
+              <img
+                src="./images/story-img-2.jpg"
+                alt="Customer image"
+                class="story-image"
+              />
+              <div class="story-text">
+                <h1 class="story-heading">
+                  I enjoyed this great tour
+                </h1>
+                <p class="story-paragraph">
+                  We had an amazing experience in kashmir India. 
+                  Thanks to travel triangle and Asia authentic travels l.
+                  They arranged everything well. 
+                  The stay was comfortable, all the places were covered as said. 
+                  I would recommend this for anyone planning to visit vietnam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <h1 class="contact-heading">Contact Us</h1>
+        <form action="/sendEmail" method="POST"  class="contact-form center">
+          <div class="input-group">
+            <label>Full Name *</label>
+            <input
+              type="text"
+              class="contact-input"
+              name="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="input-groups">
+            <div class="input-group">
+              <label>Email *</label>
+              <input
+                type="email"
+                name="email"
+                class="contact-input"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="input-group">
+              <label>Phone</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                class="contact-input"
+                placeholder="Enter Phone Number"
+
+                
+              />
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Message</label>
+            <textarea
+              class="form-textarea"
+              name="message"
+              placeholder="Your Message Here..."
+            ></textarea>
+          </div>
+          <button type="submit" value="Submit" id="form-btn" class="form-btn">Submit</button>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p class="footer-paragraph">
+          Tour-2024
+        </p>
+      </footer>
+    </div>
+    <script>
+//       const validate = (e) =>{
+//   e.preventDefault();
+//   const phone = document.getElementById('phone');
+
+//     console.log(phone.value);
+//     console.log(phone.value.length);
+
+//     if (phone.value.length==10) {
+//       document.getElementById('form-btn').setAttribute("disabled",false);
+//       // alert("Error")
+//     }
+//     else{
+//       document.getElementById('form-btn').setAttribute("disabled",true);
+//     }
+// }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
